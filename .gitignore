@@ -1,4 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
 # Virtual environments
-venv_old/
 venv/
+venv_old/
 .env/
+
+# PyTorch / large binaries
+*.dll
+*.so
+
+# Data (optional – recommended)
+data/ncert/**/*.pdf
+
+# Streamlit
+.streamlit/

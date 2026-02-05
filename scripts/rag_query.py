@@ -15,13 +15,23 @@ def ask_question(query):
 
     # 2. Create prompt for the model
     prompt = f"""
-    You are a biology tutor. Use the following NCERT textbook excerpts to answer the question:
+You are a highly knowledgeable NCERT Biology tutor.
 
-    {context}
+Rules:
 
-    Question: {query}
-    Answer in detail:
-    """
+1. If the question is not strictly biology, always link it to biology relevance.
+2. Do NOT hallucinate; base your answer only on the NCERT content below.
+
+
+
+Relevant NCERT content:
+{context}
+
+Question:
+{query}
+
+Answer following the rules above.
+"""
 
     # 3. Send to local model via Ollama
     response = ollama.chat(model="llama2", messages=[

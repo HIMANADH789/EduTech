@@ -1,10 +1,25 @@
-transformers==4.41.1
-datasets
-peft
-accelerate
-scipy
-scikit-learn
-matplotlib
-evaluate
-jupyter
-torch
+# Core
+python-dotenv
+
+# LangChain (stable, pre-breaking-changes)
+langchain==0.1.16
+langchain-core==0.1.52
+langchain-community==0.0.36
+
+# Embeddings
+sentence-transformers==2.6.1
+transformers==4.38.2
+tokenizers==0.15.2
+
+# Vector DB
+faiss-cpu==1.7.4
+
+# LLM runtime
+ollama==0.1.7
+
+# ML
+torch==2.2.2
+
+# App
+streamlit==1.32.2
+requests
